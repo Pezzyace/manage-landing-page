@@ -1,7 +1,9 @@
 const slider = document.getElementById("slider");
 const testimonialsContainer = document.getElementById("testimonial-container");
 const testimonials = document.querySelectorAll("testimonial");
-const interval = 2000; // Time in milliseconds (5 seconds)
+const interval = 2000; // Time in milliseconds (5 seconds);
+const email = document.getElementById("email");
+const submitBtn = document.getElementById("submit-btn");
 
 let currentIndex = 0;
 
@@ -16,3 +18,7 @@ function startSlider() {
 
 // Start the slider
 startSlider();
+
+submitBtn.addEventListener("click", () => {
+    if(!email){}
+})
